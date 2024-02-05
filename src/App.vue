@@ -4,8 +4,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <nav>
+    <nav class="navigation">
       <RouterLink to="/">All tasks</RouterLink>
+      <router-link :to="{ name: 'task-create' }">Create task</router-link>
     </nav>
   </header>
 
@@ -13,7 +14,3 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterView />
   </main>
 </template>
-
-<style scoped>
-
-</style>
