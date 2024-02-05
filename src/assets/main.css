@@ -1,8 +1,58 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task {
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.task-title {
+    font-weight: bold;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-actions-buttons button:last-child {
+    margin-left: 10px;
+}
+
+.task-actions button {
+    min-height: 25px;
+}
+
+.tasks-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-pagination > span {
+    margin: 0 1rem;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-form > button {
+    margin-top: 1rem;
+}
+
+.error {
+    color: red;
 }
